@@ -1,0 +1,7 @@
+This is a python program that interfaces with RuBeQu, which can be found here https://github.com/willywos/rubequ
+It pretty much acts as a command line interface.
+
+2 things to note.
+
+1. Yes, I hardcoded a url into the code.  I know I shouldn't do that.  Sorry.  I replaced it with x's for this code.  Replace it with you url for RuBeQu, or better yet, get the program to read it from a file.
+2. The set volume functionality doesn't work.  The reason for it is that RuBeQu uses an XSS protection system.  To allow POST requests through it, the app needs to generate a session and get the assigned X-CSRF key, then add it to the header.  Unfortunately, I have not figured out how to do that even though I bet that it is trivial.  If anybody can help with that, the would be great.
